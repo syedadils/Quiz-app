@@ -1,4 +1,5 @@
 import React from "react";
+import './quizStyle.css'
 import { useState } from "react";
 
 const QuizComp = () => {
@@ -58,11 +59,15 @@ const QuizComp = () => {
 			setShowScore(true);
 		}
 	};
+
+
+
 	return (
 		<div className='app'>
 			{showScore ? (
 				<div className='score-section'>
-					You scored {score} out of {questions.length}
+					You scored {score} out of {questions.length} 
+					
 				</div>
 			) : (
 				<>
